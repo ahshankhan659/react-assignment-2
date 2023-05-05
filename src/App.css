@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+.nav{
+    padding: 15px;
+    margin: 0 ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+}
+.logo{
+    color: white;
+    margin-left: 2rem;
+}
+.navber ul{
+    display: flex;
+    gap: 2rem;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    color: white;
+
+
+}
+a{
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(93, 92, 92);
+    margin-right: 2rem;
+    padding: 5px 15px;
+    border: 2px solid rgb(93, 92, 92) ;
+    border-radius:10px ;
+    transition: all .45s ease;
+
+}
+a:hover{
+    color:white;
+    border: 2px solid white; 
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* MAIN */
+.main{
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
+    background-image: url("../src/images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+.main-text{
+   padding-top: 150px;
+   padding-left: 7rem;
+   width: 40%;
+
+}
+.main-text h4{
+    color: rgb(242, 41, 41);
+    font-size: 16px;
+}
+.main-text h1{
+     color: rgb(164, 162, 162);
+     letter-spacing: 2px;
+
+}
+.main-text p{
+    color: rgb(93, 92, 92);
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* CARDS COMPONENT */
+.card-components{
+    background: rgb(23, 23, 23);
+}
+.heading{
+    text-align: center;
+    padding: 3rem 0;
+    color: white;
+    
+}
+.card {
+
+    width:300px ;
+    margin: 3rem auto;
+    border-radius: 10px;
+}
+.card-body{
+    background: black;
+    
+}
+.card-body h5{
+    color: white;
+    padding: 5px 0;
+
+    
+}
+.card-body p{
+    color: white;
+    padding-bottom:5px ;
+}
+.card-body a{
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* FOOTER */
+.footer{
+    padding: 5rem 0;
+    text-align: center;
+    background-color: black;
+}
+/* .social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+.social-icons i{
+    color: rgb(64, 64, 64);
+    font-size: 45px;
+    padding: 2rem 4rem;
+    transition: all 0.45s ease;
+}
+.social-icons i:hover{
+    color: white;
+}
+.footer h1{
+    color: white;
+    padding: 0 0 1rem 0;
+}
+.footer p{
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
